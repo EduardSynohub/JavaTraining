@@ -1,6 +1,6 @@
 package eduard.wprowadzenie_do_javy;
 
-public class Loops {
+public class loops {
     public static void main(String[] args) {
         int num1 = 3;
         int num2 = 7;
@@ -87,6 +87,18 @@ public class Loops {
             for (int j2 = 1; j2 <= m; j2++) {
                 if (j2 > i) {
                 str3 += j2 + " ";
+                } else {
+                    str3 += "* ";
+                }
+            }
+            System.out.println(str3);
+        }
+
+        for (int i = 5; i > 0; i--) {
+            String str3 = "";
+            for (int j2 = 1; j2 <= m; j2++) {
+                if (j2 > i) {
+                    str3 += j2 + " ";
                 } else {
                     str3 += "* ";
                 }
