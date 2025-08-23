@@ -1,4 +1,4 @@
-package eduard.wprowadzenie_do_javy;
+package eduard.introductionToJava;
 
 public class loops {
     public static void main(String[] args) {

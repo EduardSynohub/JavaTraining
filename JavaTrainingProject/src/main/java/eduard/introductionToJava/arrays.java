@@ -1,4 +1,4 @@
-package eduard.wprowadzenie_do_javy;
+package eduard.introductionToJava;
 
 import java.util.Locale;
 
