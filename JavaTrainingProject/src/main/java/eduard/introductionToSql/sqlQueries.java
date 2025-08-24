@@ -18,5 +18,6 @@ public class sqlQueries {
             "    SET salary = 1950\n" +
             "    WHERE salary <= 1900";
 
+    public static String QUERY11 = "DELETE FROM teachers where id = 100";
 
 }
