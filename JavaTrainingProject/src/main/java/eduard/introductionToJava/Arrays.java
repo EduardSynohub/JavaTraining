@@ -2,7 +2,7 @@ package eduard.introductionToJava;
 
 import java.util.Locale;
 
-public class arrays {
+public class Arrays {
     public static void main(String[] args) {
         int threeElements [] = {3, 5, 7};
         for (int i = 0; i < threeElements.length; i++) {

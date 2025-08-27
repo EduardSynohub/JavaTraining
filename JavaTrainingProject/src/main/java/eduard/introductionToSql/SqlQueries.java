@@ -1,6 +1,6 @@
 package eduard.introductionToSql;
 
-public class sqlQueries {
+public class SqlQueries {
     public static String QUERY1 = "INSERT INTO teachers (teachers_name, teachers_surname, salary) VALUE ('Jakub', 'Rogowski', 1800.00)";
     public static String QUERY2 = "SELECT * FROM teachers WHERE salary >= 2000";
     public static String QUERY3 = "SELECT * FROM teachers WHERE id BETWEEN 2 AND 5 ORDER BY id DESC";

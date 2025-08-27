@@ -1,6 +1,6 @@
 package eduard.introductionToJava;
 
-public class startUpParametrs {
+public class StartUpParametrs {
     public static void main(String[] args) {
         double sum = 0;
         for (int i = 0; i < args.length; i++) {

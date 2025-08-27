@@ -1,6 +1,6 @@
 package eduard.introductionToJava;
 
-public class loops {
+public class Loops {
     public static void main(String[] args) {
         int num1 = 3;
         int num2 = 7;

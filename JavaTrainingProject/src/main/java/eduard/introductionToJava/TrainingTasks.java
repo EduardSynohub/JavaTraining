@@ -1,7 +1,7 @@
 package eduard.introductionToJava;
 
 
-public class trainingTasks {
+public class TrainingTasks {
     public static void main(String[] args) {
         System.out.println("Hello World");
         System.out.println("Hello java" + "\n" + "Hello world");
