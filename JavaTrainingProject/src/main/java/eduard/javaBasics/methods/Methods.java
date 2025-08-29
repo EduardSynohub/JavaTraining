@@ -102,16 +102,16 @@ public class Methods {
     }
 
 //    task 9
-    public static String footballWin(int goalsForAonFieldA, int goalsForBonFieldA, int goalsForAonFieldB, int goalsForBonFieldB) {
-        if ((goalsForAonFieldA + goalsForAonFieldB) == (goalsForBonFieldA + goalsForBonFieldB)) {
-            if (goalsForAonFieldB > goalsForBonFieldA) {
+    public static String footballWin(int goalsForTeamAonFieldA, int goalsForTeamBonFieldA, int goalsForTeamAonFieldB, int goalsForTeamBonFieldB) {
+        if ((goalsForTeamAonFieldA + goalsForTeamAonFieldB) == (goalsForTeamBonFieldA + goalsForTeamBonFieldB)) {
+            if (goalsForTeamAonFieldB > goalsForTeamBonFieldA) {
                 return "Wygrał zespół A, bo ma więcej bramek na wyjeździe.";
-            } else if (goalsForAonFieldB < goalsForBonFieldA){
+            } else if (goalsForTeamAonFieldB < goalsForTeamBonFieldA){
                 return "Wygrał zespół B, bo ma więcej bramek na wyjeździe.";
             } else {
                 return "Remis.";
             }
-        } else if ((goalsForAonFieldA + goalsForAonFieldB) > (goalsForBonFieldA + goalsForBonFieldB)) {
+        } else if ((goalsForTeamAonFieldA + goalsForTeamAonFieldB) > (goalsForTeamBonFieldA + goalsForTeamBonFieldB)) {
             return "Wygrał zespół A.";
         } else {
             return "Wygrał zespół B.";
