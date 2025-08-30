@@ -1,6 +1,6 @@
 package eduard.javaBasics.methods;
 
-public class Methods {
+public class MethodsTasks {
     public static void main(String[] args) {
 //        task 1
         int m = 5;
