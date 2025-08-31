@@ -73,6 +73,16 @@ public class ArraysTasks {
         int [] arr2 = {1, 2, 3, 4, 5};
         System.out.println(Arrays.toString(append(arr1)));
         System.out.println(Arrays.toString(append(arr2)));
+
+//        task 8
+        int element1 = 3;
+        int element2 = 6;
+        System.out.println(contains(arr1, element1));
+        System.out.println(contains(arr1, element2));
+
+//        task 9
+        int[] arr = {1, 1, 2, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 7, 45, 45, 56, 1};
+        System.out.println(Arrays.toString(returnUnique(arr)));
     }
 
 //    task 7
@@ -81,6 +91,32 @@ public class ArraysTasks {
         for (int i = 0; i < arr.length; i++) {
             newArr[newArr.length - 1 - i] = arr[i];
         }
+        return newArr;
+    }
+//    task 8
+    public static boolean contains(int[] arr, int element) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == element) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+//    task 9
+    public static int[] returnUnique(int[] arr) {
+        int[] newArr = {arr[0]};
+        for (int i = 0; i < arr.length; i++) {
+                if (!contains(newArr, arr[i])) {
+                    newArr = addAnElementToTheArray(newArr, arr[i]);
+                }
+        }
+        return newArr;
+    }
+
+    public static int[] addAnElementToTheArray(int[] array, int elementToAdd) {
+        int[] newArr = Arrays.copyOf(array, array.length + 1);
+        newArr[newArr.length - 1] = elementToAdd;
         return newArr;
     }
 }
