@@ -67,5 +67,20 @@ public class ArraysTasks {
         System.out.println(Arrays.toString(numbers));
         System.out.println(Arrays.toString(secondNumbers));
         System.out.println(Arrays.toString(sumArray));
+
+//        task 7
+        int [] arr1 = {1, 2, 3};
+        int [] arr2 = {1, 2, 3, 4, 5};
+        System.out.println(Arrays.toString(append(arr1)));
+        System.out.println(Arrays.toString(append(arr2)));
+    }
+
+//    task 7
+    public static int[] append(int[] arr) {
+        int [] newArr = Arrays.copyOf(arr, arr.length * 2);
+        for (int i = 0; i < arr.length; i++) {
+            newArr[newArr.length - 1 - i] = arr[i];
+        }
+        return newArr;
     }
 }
