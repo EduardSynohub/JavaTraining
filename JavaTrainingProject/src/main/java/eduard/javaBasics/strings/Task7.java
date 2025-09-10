@@ -4,10 +4,13 @@ public class Task7 {
     public static void main(String[] args) {
         String palindrome = "level";
         String palindrome1 = " A to kanapa pana kota";
+        String palindrome2 = "Welcome";
         System.out.println(isPalindrome(palindrome));
         System.out.println(isPalindrome(palindrome1));
         System.out.println(isPalindromeVersion2(palindrome1));
         System.out.println(isPalindromeVersion2(palindrome));
+        System.out.println(isPalindrome(palindrome2));
+        System.out.println(isPalindromeVersion2(palindrome2));
     }
 
     public static boolean isPalindrome(String string) {
