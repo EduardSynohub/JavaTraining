@@ -2,8 +2,8 @@ package eduard.javaBasics.strings;
 
 public class Task14 {
     public static void main(String[] args) {
-        String secretCode = "khoor";
-        int shift = -3;
+        String secretCode = "EbiilTloia";
+        int shift = 3;
         System.out.println(encodeCaesar(secretCode, shift));
     }
 
