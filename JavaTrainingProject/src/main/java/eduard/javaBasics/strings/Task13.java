@@ -8,6 +8,8 @@ public class Task13 {
         String s = "a";
         System.out.println(encode(s));
         System.out.println(encode("z"));
+        System.out.println(encode("khoor"));
+        System.out.println(encode("zruog"));
     }
 
     public static String encode(String str) {
