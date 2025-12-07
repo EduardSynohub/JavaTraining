@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class Task15 {
     public static void main(String[] args) {
-        String str = "Jakiś tekst do sprawdzenia";
-        String[] words = {"do", ", do"};
+        String str = "Some text for cheking";
+        String[] words = {"for"};
         System.out.println(censor(str, words));
     }
     public static StringBuilder censor(String str, String[] words) {
