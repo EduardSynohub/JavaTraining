@@ -11,7 +11,7 @@ public class Task4 {
                 Java is a popular programming language used all over the world.
                 Many developers choose Java because it is reliable and platform-independent.
                 Java is often used to create desktop applications, web services, and Android apps.
-                Thanks to its strong community and long history, Java remains one of the most important technologies in software development.""");
+                Thanks to its strong community and long history, Java remains one of the most important technologies in software development.""", "Text_for_task_4");
         File file = new File("Text_for_task_4.txt");
         try {
             Scanner scanner = new Scanner(file);
@@ -24,14 +24,14 @@ public class Task4 {
                 }
             }
         } catch (FileNotFoundException e) {
-            System.out.println("File not found when read.");
+            System.out.println("File not found while reading.");
         }
     }
 
-    public static void fileCreator(String someText) {
+    public static void fileCreator(String someText, String nameOfFile) {
         PrintWriter printWriter = null;
         try {
-            printWriter = new PrintWriter("Text_for_task_4.txt");
+            printWriter = new PrintWriter(nameOfFile + ".txt");
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         }
